@@ -54,7 +54,7 @@ HB_PACKAGES=(
   libraw
   librsvg
   libsecret
-  libsoup@2
+  libsoup
   little-cms2
   llvm
   lua
@@ -72,4 +72,4 @@ HB_PACKAGES=(
 brew install "${HB_PACKAGES[@]}"
 
 # Handle keg-only libs.
-brew link --force libomp libsoup@2
+brew link --force libomp

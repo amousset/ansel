@@ -25,8 +25,7 @@
 #               $ export CODECERT="developer@apple.id"
 #               The mail address is the email/id of your developer certificate.
 
-#   
- Exit in case of error
+# Exit in case of error
 set -e -o pipefail
 trap 'echo "${BASH_SOURCE[0]}{${FUNCNAME[0]}}:${LINENO}: Error: command \`${BASH_COMMAND}\` failed with exit code $?"' ERR
 
